@@ -1,0 +1,41 @@
+// Text
+// ----
+$text-color : #222222;
+$text-light : lighten($text-color,30);
+
+
+// Backgrounds
+// -----------
+$bg-dark : #111111;
+$bg-light : #F7F5F4;
+
+
+// Fonts
+// -----
+$font-body : 'Roboto', 'Helvetica', 'arial', 'sans-serif';
+$font-title : 'Roboto', 'Helvetica', 'arial', 'sans-serif';
+
+
+// Links
+// -----
+$link-color : #49a6e9;
+$link-color-hover : darken($link-color, 15);
+
+
+// Transition
+// ----------
+$transition-base : all 0.2s ease-in-out;
+
+
+// Breakpoints
+// -----------
+
+$container : 1180px;
+$tinysmartphone : 380px;
+$minismartphone : 480px;
+$smartphone : 560px;
+$minitablet : 768px;
+$tablet : 840px;
+$minidesktop : 980px;
+$desktop : 1100px;
+$largedesktop : 1380px;

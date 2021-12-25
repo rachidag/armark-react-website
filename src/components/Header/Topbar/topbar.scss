@@ -1,0 +1,60 @@
+@import '../../../sassStyles/abstracts/variables';
+
+.topbar {
+    border-bottom: 0.1rem solid #eee;
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+}
+
+.topbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+.topbar__contact {
+    list-style: none;
+    display: inline-flex;
+    li {
+        display: inline-block;
+        a {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            color: lighten($text-light, 20);
+            &:hover {
+                color: $link-color;
+            }
+        }
+        i {
+            display: inline-flex;
+            margin-right: 0.8rem;
+        }
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.topbar__social {
+    list-style: none;
+    display: inline-flex;
+    li {
+        display: inline-flex;
+        a {
+            font-size: 1.8rem;
+            display: inline-flex;
+            color: lighten($text-light, 10);
+            line-height: 0;
+            &:hover {
+                color: $link-color;
+            }
+        }
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}

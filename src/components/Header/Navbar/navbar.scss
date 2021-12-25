@@ -1,0 +1,110 @@
+@import '../../../sassStyles/abstracts/variables';
+
+.navbar {
+    background-color: white; 
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767.98px) {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.navbar__logo {
+    a {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        img {
+            max-height: 4rem;
+            width: auto;
+        }
+    }
+    @media screen and (max-width: 767.98px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        width: 100%;
+        a img {
+            max-height: 3rem;
+        }
+    }
+}
+
+.navbar__toggle {
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;
+    color: $link-color;
+    cursor: pointer;
+    transition: $transition-base;
+    display: none;
+    @media screen and (max-width: 767.98px) {
+        display: inline-flex;
+    }
+}
+
+.navbar__collapse {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    @media screen and (max-width: 767.98px) {
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow-y: hidden;
+        transition: max-height 0.5s linear;
+        &.open {
+            max-height: 40rem;
+            overflow-y: auto;
+            border-top: 1px solid #eee;
+        }
+    }
+}
+
+.navbar__links {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+        display: inline-block;
+        a {
+            display: inline-block;
+            padding: 3rem 1.5rem;
+            color: #444444;
+            font-size: 1.8rem;
+            &.active {
+                color: $link-color;
+            }
+            &:hover {
+                color: $link-color;
+            }
+        }
+    }
+    @media screen and (max-width: 767.98px) {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding-top: 2rem;
+        li {
+            width: 100%; 
+            a {
+                width: 100%;
+                padding: 1rem 2rem;
+                text-align: center;
+            }
+        }
+    } 
+}
+
+.navbar__options {
+    @media screen and (max-width: 767.98px) {
+        padding: 2rem 1rem 3rem;
+    }
+}

@@ -1,0 +1,160 @@
+// App parent
+// ----------
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+// Container
+// ---------
+
+.container {
+  max-width: $container;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @media all and (max-width: $container) {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @include minismartphone() {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.container--small {
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// Section
+// -------
+
+.section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  @include tablet() {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+
+// Screen reader text
+// ------------------
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+// Texte
+//------
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-big {
+  font-size: 120%;
+}
+
+.text-small {
+  font-size: 80%;
+}
+
+
+// Show/hide
+// ---------
+
+.hide {
+  @include hide();
+}
+
+
+// Flex
+// ----
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+// Margin
+// ------
+
+@for $i from 1 through 10 {
+  .mt-#{$i} {
+    margin-top: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 10 {
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 10 {
+  .mr-#{$i} {
+    margin-right: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 10 {
+  .ml-#{$i} {
+    margin-left: #{$i}rem;
+  }
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+
+// paddings
+// --------
+

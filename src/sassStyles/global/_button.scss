@@ -1,0 +1,16 @@
+.btn {
+    background-color: $link-color;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: $transition-base;
+    cursor: pointer;
+    display: inline-block;
+    &:hover, &:focus {
+        background-color: $link-color-hover;
+        color: white;
+    }
+}
