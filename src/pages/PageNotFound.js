@@ -1,5 +1,4 @@
 import React from 'react';
-import PageHeader from '../components/PageHeader/PageHeader';
 import Error404 from '../components/Errors/Error404';
 
 function PageNotFound() {
