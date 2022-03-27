@@ -4,13 +4,11 @@
 @import './abstracts/functions';
 @import './abstracts/mixins';
 
-@import './base/minreset';
-@import './base/generic';
-@import './base/general';
+@import './base/base';
+@import './base/container';
 @import './base/grid';
-@import './base/animations';
+@import './base/general';
 
-@import './global/button';
-@import './global/form';
-@import './global/link';
-@import './global/title';
+@import './components/buttons';
+@import './components/forms';
+@import './components/alerts';

@@ -18,10 +18,12 @@
 .topbar__contact {
     list-style: none;
     display: inline-flex;
+    padding-left: 0;
+    margin-bottom: 0;
     li {
         display: inline-block;
         a {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             display: flex;
             align-items: center;
             color: lighten($text-light, 20);
@@ -42,10 +44,12 @@
 .topbar__social {
     list-style: none;
     display: inline-flex;
+    padding-left: 0;
+    margin-bottom: 0;
     li {
         display: inline-flex;
         a {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             display: inline-flex;
             color: lighten($text-light, 10);
             line-height: 0;
@@ -54,7 +58,7 @@
             }
         }
         &:not(:last-child) {
-            margin-right: 2rem;
+            margin-right: 1.5rem;
         }
     }
 }

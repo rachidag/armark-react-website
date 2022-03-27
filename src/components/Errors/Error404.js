@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './error404.scss';
+import img404 from "../../assets/404.png";
 
 function Error404() {
     return (
         <section className="error404">
-            <div className="container error404__container">
+            <div className="container">
                 <div className="error404__content">
-                    <h1>Eroor 404!</h1>
-                    <p>Opps... Sorry, this page is not found. It looks like nothing was found at this location.</p>
+                    <img src={img404} alt="Page not found" />
+                    <h1>Oops! Page Not Found.</h1>
+                    <p>The page you are looking for is not available or has been moved. Try a different page or go to homepage with the button below.</p>
                     <Link to="/" className="btn">Back to website</Link>
                 </div>
             </div>

@@ -18,9 +18,10 @@
         font-size: 2.4rem;
         text-transform: uppercase;
         font-weight: 700;
+        display: block;
+        line-height: 1;
         img {
-            max-height: 4rem;
-            width: auto;
+            width: 14rem;
         }
     }
     @media screen and (max-width: 767.98px) {
@@ -69,15 +70,17 @@
 
 .navbar__links {
     list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     li {
         display: inline-block;
         a {
             display: inline-block;
-            padding: 3rem 1.5rem;
+            padding: 3rem 2rem;
             color: #444444;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             &.active {
                 color: $link-color;
             }
@@ -103,7 +106,11 @@
     } 
 }
 
-.navbar__options {
+.navbar__contact{
+    .btn {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
     @media screen and (max-width: 767.98px) {
         padding: 2rem 1rem 3rem;
     }

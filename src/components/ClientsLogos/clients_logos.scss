@@ -1,0 +1,51 @@
+@import '../../sassStyles/abstracts/variables';
+@import '../../sassStyles/abstracts/mixins';
+
+.clients-logos {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.clients-logos__head {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+
+    h2 {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+    p {
+        color: $text-light;
+        margin-bottom: 0;
+    }
+}
+
+.clients-logos__wrap {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.clients-logos .row {
+    justify-content: center;
+    margin-top: -4rem;
+}
+
+.clients-logos .client-logo {
+    text-align: center;
+    margin-top: 4rem;
+    img {
+        opacity: .6;
+        max-width: 12rem;
+        text-align: center;
+        display: inline-block;
+        transition: $transition-base;
+
+        &:hover {
+            opacity: .8;
+            transform: scale(1.1);
+        }
+    }
+}

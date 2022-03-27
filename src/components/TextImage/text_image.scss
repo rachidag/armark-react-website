@@ -1,0 +1,28 @@
+@import '../../sassStyles/abstracts/variables';
+@import '../../sassStyles/abstracts/mixins';
+
+.text-image {
+    padding: 8rem 0;
+
+    &:nth-child(even) {
+        background-color: $bg-light;
+    }
+
+    span {
+        color: $link-color;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    &__body {
+        margin-bottom: 2.5rem;
+    }
+
+    &__img {
+        margin-top: 4rem;
+
+        @include medium-screen {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import '../../sassStyles/abstracts/variables';
+@import '../../sassStyles/abstracts/mixins';
+
+.service {
+    border: 1px solid $border-color;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    border-radius: .4rem;
+    transition: $transition-base;
+
+    &:hover {
+        border-color: $link-color;
+        transform: translateY(-.2rem);
+    }
+
+    span {
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba($link-color, 0.18);
+        color: $link-color;
+        border-radius: .4rem;
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}

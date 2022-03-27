@@ -1,0 +1,81 @@
+@import '../../sassStyles/abstracts/variables';
+@import '../../sassStyles/abstracts/mixins';
+
+.contact__main {
+    padding: 8rem 0;
+
+    .container {
+        .row {
+            justify-content: center;
+        }
+    }
+}
+
+.contact__form {
+    margin-bottom: 6rem;
+    @include large-screen() {
+        margin-bottom: 0;
+    }
+}
+
+.contact__ways {
+    margin-top: 0;
+
+    .contact-way {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__icon {
+            height: 5rem;
+            width: 5rem;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background: rgba($link-color, 0.18);
+            color: $link-color;
+            border-radius: 4px;
+        }
+
+        &__content {
+            margin-left: 2rem;
+
+            h5 {
+                font-size: 1.8rem;
+                margin-top: .2rem;
+                margin-bottom: .4rem;
+            }
+
+            a,
+            span {
+                color: $text-light;
+            }
+        }
+
+        @include large-screen() {
+            margin-bottom: 0;
+        }
+    }
+
+    @include large-screen() {
+        margin-top: 6rem;
+    }
+}
+
+.contact__map {
+    margin-bottom: 6rem;
+    iframe {
+        height: 35rem;
+
+        @include small-screen() {
+            height: 100%;
+        }
+    }
+    @include small-screen() {
+        margin-bottom: 0;
+    }
+}

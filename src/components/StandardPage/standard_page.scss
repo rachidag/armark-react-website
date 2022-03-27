@@ -1,0 +1,10 @@
+@import '../../sassStyles/abstracts/variables';
+@import '../../sassStyles/abstracts/mixins';
+
+.page-standard {
+  padding: 6rem 0;
+
+  .container {
+    max-width: 90rem;
+  }
+}

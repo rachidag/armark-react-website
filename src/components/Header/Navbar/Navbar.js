@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, NavLink } from "react-router-dom"
 
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import './navbar.scss';
 import logo from '../../../assets/logo.svg';
 
 
-function Navbar() {
-
-    const [menuToggle, setmMnuToggle] = useState(false)
+function Navbar({menuToggle, setMenuToggle}) {
 
     return (
         <nav className="navbar">
@@ -18,7 +16,7 @@ function Navbar() {
                     <Link to="/">
                         <img src={logo} className="site-logo" alt="logo" />
                     </Link>
-                    <button className="navbar__toggle" onClick={() => setmMnuToggle(!menuToggle)}>
+                    <button className="navbar__toggle" onClick={() => setMenuToggle(!menuToggle)}>
                         {menuToggle ? <FaTimes /> : <FaBars />}
                     </button>
                 </div>
@@ -26,13 +24,11 @@ function Navbar() {
                     <ul className="navbar__links">
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="about">About</NavLink></li>
+                        <li><NavLink to="services">Services</NavLink></li>
                         <li><NavLink to="projects">Projects</NavLink></li>
-                        <li><NavLink to="contact">Contact</NavLink></li>
                     </ul>
-                    <div className="navbar__options">
-                        <button className="btn">
-                            More Options
-                        </button>
+                    <div className="navbar__contact">
+                        <NavLink to="contact" className="btn">Contact us</NavLink>
                     </div>
                 </div>
             </div>

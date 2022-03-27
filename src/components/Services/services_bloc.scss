@@ -1,0 +1,9 @@
+@import '../../sassStyles/abstracts/variables';
+@import '../../sassStyles/abstracts/mixins';
+
+.services-list {
+    padding: 7rem 0;
+    .row {
+        margin-top: -3rem;
+    }
+}

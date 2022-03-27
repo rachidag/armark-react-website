@@ -16,15 +16,15 @@ function Topbar() {
                     <li>
                         <a href="mailto:contact@company.com">
                             <i><FaEnvelope /></i>
-                            <span>contact@company.com</span>
+                            <span>contact@armark.com</span>
                         </a>
                     </li>
                 </ul>
                 <ul className="topbar__social">
-                    <li><a href="https://facebook.com" target="_blank"><FaFacebook /></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><FaTwitter /></a></li>
-                    <li><a href="https://linkedin.com" target="_blank"><FaLinkedin /></a></li>
-                    <li><a href="https://instagram.com" target="_blank"><FaInstagram /></a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebook /></a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
                 </ul>
             </div>
         </div>

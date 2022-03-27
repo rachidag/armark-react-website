@@ -1,87 +1,31 @@
-// grid
-// ---------
+// Breackpoint
 
-@mixin row($gutter : 1rem) {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: $gutter * -1;
-  margin-right: $gutter * -1;
-  width: calc(100% + #{$gutter * 2});
-}
-
-@mixin col($col) {
-  width: calc(100% / 12 * #{$col} - 2rem);
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-
-// Show/Hide
-// ---------
-
-@mixin hide() {
-  overflow: hidden;
-  visibility: hidden;
-  opacity: 0;
-  max-height: 0;
-}
-
-@mixin show() {
-  overflow: visible;
-  visibility: visible;
-  opacity: 1;
-  max-height: 2000px;
-}
-
-@mixin unstyle() {
-  background: transparent;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-
-// Responsive Breackpoint
-// ----------------------
-
-@mixin tinysmartphone {
-  @media (max-width: #{$tinysmartphone - 1px}) {
+@mixin small-screen() {
+  @media (min-width: #{$small-screen}) {
     @content;
   }
 }
 
-@mixin minismartphone {
-  @media (max-width: #{$minismartphone - 1px}) {
+@mixin medium-screen() {
+  @media (min-width: #{$medium-screen}) {
     @content;
   }
 }
-@mixin smartphone {
-  @media (max-width: #{$smartphone - 1px}) {
+
+@mixin large-screen() {
+  @media (min-width: #{$large-screen}) {
     @content;
   }
 }
-@mixin minitablet {
-  @media (max-width: #{$minitablet - 1px}) {
+
+@mixin xlarge-screen() {
+  @media (min-width: #{$xlarge-screen}) {
     @content;
   }
 }
-@mixin tablet {
-  @media (max-width: #{$tablet - 1px}) {
-    @content;
-  }
-}
-@mixin minidesktop {
-  @media (max-width: #{$minidesktop}) {
-    @content;
-  }
-}
-@mixin desktop {
-  @media (max-width: #{$desktop - 1px}) {
-    @content;
-  }
-}
-@mixin largedesktop {
-  @media (max-width: #{$largedesktop - 1px}) {
+
+@mixin xxlarge-screen() {
+  @media (min-width: #{$xxlarge-screen}) {
     @content;
   }
 }

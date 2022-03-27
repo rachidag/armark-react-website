@@ -1,82 +1,74 @@
 .row {
-  @include row();
-}
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
 
-.row-fluid {
-  @include row(0);
+  &--center {
+    align-items: center;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  & > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 @for $i from 1 through 12 {
   .col-#{$i} {
-    width: calc(100% / 12 * #{$i} - 2rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .coln-#{$i} {
-    width: calc((100% / 12 * #{$i}));
+    flex: 0 0 auto;
+    width: calc(100% / 12 * #{$i});
   }
 }
 
-@media all and (min-width: 576px) {
+@include small-screen() {
   @for $i from 1 through 12 {
     .col-sm-#{$i} {
-      width: calc(100% / 12 * #{$i} - 2rem);
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-    .coln-sm-#{$i} {
-      width: calc((100% / 12 * #{$i}));
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
     }
   }
 }
 
-@media all and (min-width: 768px) {
+@include medium-screen() {
   @for $i from 1 through 12 {
     .col-md-#{$i} {
-      width: calc(100% / 12 * #{$i} - 2rem);
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-    .coln-md-#{$i} {
-      width: calc((100% / 12 * #{$i}));
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
     }
   }
 }
 
-@media all and (min-width: 960px) {
+@include large-screen() {
   @for $i from 1 through 12 {
     .col-lg-#{$i} {
-      width: calc(100% / 12 * #{$i} - 2rem);
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-    .coln-lg-#{$i} {
-      width: calc((100% / 12 * #{$i}));
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
     }
   }
 }
 
-@media all and (min-width: 1200px) {
+@include xlarge-screen() {
   @for $i from 1 through 12 {
     .col-xl-#{$i} {
-      width: calc(100% / 12 * #{$i} - 2rem);
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-    .coln-xl-#{$i} {
-      width: calc((100% / 12 * #{$i}));
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
     }
   }
 }
 
-@media (max-width: 767px) {
-  .hidden-sm-down {
-    display: none!important;
-  }
-}
-
-@media (min-width: 768px) {
-  .hidden-md-up {
-    display: none!important;
+@include xxlarge-screen() {
+  @for $i from 1 through 12 {
+    .col-xxl-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
+    }
   }
 }

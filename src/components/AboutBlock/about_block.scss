@@ -1,7 +1,7 @@
 @import '../../sassStyles/abstracts/variables';
 
 .about {
-    padding: 6rem 0;
+    padding: 8rem 0;
 }
 
 .about__content {
@@ -9,18 +9,15 @@
     margin: 0 auto;
     span {
         display: inline-block;
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
+        padding: .5rem 1.5rem;
+        font-size: 1.4rem;
         background-color: $bg-dark;
         color: white;
         border-radius: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    h2 {
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.8rem;
     }
     .body {
-        margin-bottom: 3.5rem;
+        margin-bottom: 3rem;
     }
 }
 
